@@ -1,0 +1,130 @@
+.EditPost {
+    text-align: center;
+    justify-content: center;
+}
+
+.EditPost p {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.EditPost .preview_title {
+    margin-bottom: .2em;
+    color: #000;
+    font-weight: bold;
+}
+
+.image_preview {
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .image_preview {
+        max-width: 600px;
+        height: auto;
+        width: 100%;
+    }
+  }
+
+
+.EditPost label:last-of-type {
+    margin-bottom: 40px;
+}
+
+.labelImage {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+  
+
+input[type="file"]:not(:placeholder-shown) {
+    color: #A9A9A9;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: rgb(163, 18, 18);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: .4s;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: rgb(117, 10, 10);
+}
+
+.textareabody {
+    resize: none;
+    padding: 0px 0px 20px 0px;
+    margin-top: 5px;
+}
+
+.flexbtn {
+    background-color: rgb(163, 18, 18);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: .4s;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.flexbtn:hover {
+    background-color: rgb(117, 10, 10);
+}
+
+.contentbetween {
+    justify-content: space-between;
+    display: flex;
+}
+
+.contentbetween p {
+    margin-bottom: -40px !important;
+    font-size: .8em;
+    margin-top: 0px;
+}
+
+.backandpost {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.btnback {
+    background-color: rgb(163, 18, 18);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 95px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    transition: .4s;
+}
+
+.btnback:hover {
+    background-color: rgb(117, 10, 10);
+    color: #fff;
+}
+
+.btnpost {
+    background-color: rgb(163, 18, 18);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 120px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    transition: .4s;
+}
+  
+.btnpost:hover {
+    background-color: rgb(117, 10, 10);
+}

@@ -1,0 +1,108 @@
+.dashboard {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard h2 {
+    font-size: 2.2em;
+    margin-bottom: .5em;
+}
+
+.dashboard p {
+    color: #aaa;
+    margin-bottom: 1em;
+}
+
+.noposts {
+    text-align: center;
+}
+
+.noposts p {
+    margin-bottom: 1.5em;
+}
+
+.buttoncontainer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.btnnormal, .btndelete {
+    cursor: pointer;
+    border: 1px solid #000;
+    font-weight: 600;
+    padding: 10px 10px;
+    font-size: 1em;
+    transition: .4s;
+    width: 100px; /* ou outro tamanho desejado em pixels */
+}
+
+@media (max-width: 768px) {
+    .btnnormal, .btndelete {
+      width: 60px;
+      font-size: .8em;
+    }
+
+    .post_row p {
+        font-size: .8em;
+    }
+  }
+
+.btnnormal{
+    background-color: rgb(163, 18, 18);
+    color: #fff;
+}
+
+.btnnormal:hover{
+    background-color: rgb(117, 10, 10);
+    color: aliceblue;
+}
+
+.btndelete{
+    background-color: #FFEA00;
+    color: #000;
+}
+
+.btndelete:hover{
+    background-color: #FFBF00;
+    color: #0e0909;
+}
+
+.containerheader {
+    display: flex;
+    justify-content: center;
+}
+
+.post_header{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px;
+}
+
+.post_header {
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+}
+
+.post_content {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.post_row {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EEE;
+    max-width: 82%;
+    margin-left: 9%;
+}
+
+.post_row button, .post_row a {
+    margin: 0 5px;
+}

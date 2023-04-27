@@ -1,0 +1,49 @@
+.alinhartexto {
+    text-align: center;
+    justify-content: center;
+}
+
+.espacobotao {
+    margin-bottom: 30px;
+}
+
+.post_detail {
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    overflow: hidden;
+    display: flex; /* adiciona display flex */
+    flex-direction: column; /* ajusta a direção dos elementos */
+    align-items: center; /* centraliza verticalmente os elementos */
+    padding: 30px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.1);
+    word-break: break-word;
+}
+
+.post_detail img {
+    max-width: 600px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .post_detail img {
+        max-width: 600px;
+        height: auto;
+        width: 100%;
+    }
+  }
+
+.post_detail h2 {
+    margin-bottom: .2em;
+}
+
+.createdby {
+    font-style: italic;
+    color: #444;
+    font-size: .8em;
+}
+
+.body {
+    margin-bottom: 2.5em;
+}

@@ -1,0 +1,13 @@
+.login {
+    text-align: center;
+    justify-content: center;
+}
+
+.login p {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.login label:last-of-type {
+    margin-bottom: 40px;
+}

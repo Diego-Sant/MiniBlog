@@ -1,0 +1,22 @@
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Define três linhas: uma para o cabeçalho, uma para o conteúdo e uma para o footer */
+    min-height: 100vh;
+    grid-gap: 20px; /* Ajuste o valor de espaçamento conforme desejado */
+    grid-template-areas:
+      "header"
+      "content"
+      "footer"; /* Define as áreas do grid para o cabeçalho, conteúdo e footer */
+  }
+  
+  .header {
+    grid-area: header; /* Define o elemento com a classe .header para ocupar a área do cabeçalho */
+  }
+  
+  .content {
+    grid-area: content; /* Define o elemento com a classe .content para ocupar a área do conteúdo */
+  }
+  
+  .footer {
+    grid-area: footer; /* Define o elemento com a classe .footer para ocupar a área do footer */
+  }

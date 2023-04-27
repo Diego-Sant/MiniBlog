@@ -1,0 +1,100 @@
+.navbar {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, .15) 0px -2px 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 2em;
+}
+
+.brand {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.brand span {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.links_list {
+    display: flex;
+    list-style: none;
+}
+
+.links_list li {
+    margin-right: 1em;
+    position: relative;
+}
+
+.links_list li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Define o ponto de origem no meio do elemento */
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    transform: scaleX(0) translateX(-50%); /* Começa com escala 0 e deslocamento para a esquerda em 50% */
+    transform-origin: bottom; /* Define o ponto de origem da transformação */
+    transition: width 0.5s; /* Aplicando a transição na propriedade transform */
+  }
+  
+.links_list li:hover::after {
+    width: 99%;
+    transform: scaleX(1) translateX(-50%); /* Transforma a altura para 1 quando o elemento é hoverizado */
+}
+
+.links_list li a {
+    padding: .4em .6em;
+    text-decoration: none;
+}
+
+.active {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+
+.sairbotao {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: none;
+}
+
+.sairbotao:hover {
+  color: rgb(163, 18, 18);
+}
+
+.sairbotao::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Define o ponto de origem no meio do elemento */
+  width: 0;
+  height: 1px;
+  background-color: #F6FCFF;
+  transform: scaleX(0) translateX(-50%); /* Começa com escala 0 e deslocamento para a esquerda em 50% */
+  transform-origin: bottom; /* Define o ponto de origem da transformação */
+  transition: width 0.1s; /* Aplicando a transição na propriedade transform */
+  z-index: 100;
+}
+
+.sairbotao:hover::after {
+  width: 100%;
+  transform: scaleX(1) translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Altera a direção do flex para empilhar os itens verticalmente */
+    }
+  
+    .links_list {
+      margin-top: 1em; /* Adiciona um espaço entre os itens de lista empilhados */
+    }
+  
+    .links_list li {
+      margin-right: 0; /* Remove a margem direita dos itens de lista empilhados */
+    }
+}

@@ -1,0 +1,13 @@
+.register {
+    text-align: center;
+    justify-content: center;
+}
+
+.register p {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.register label:last-of-type {
+    margin-bottom: 40px;
+}

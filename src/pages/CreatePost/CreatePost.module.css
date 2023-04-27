@@ -1,0 +1,66 @@
+.createPost {
+    text-align: center;
+    justify-content: center;
+}
+
+.createPost p {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.createPost label:last-of-type {
+    margin-bottom: 40px;
+}
+
+.labelImage {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+  
+
+input[type="file"]:not(:placeholder-shown) {
+    color: #A9A9A9;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: rgb(163, 18, 18);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: .4s;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: rgb(117, 10, 10);
+}
+
+.textareabody {
+    resize: none;
+    padding: 0px 0px 20px 0px;
+    margin-top: 5px;
+}
+
+.flexbtn {
+    background-color: rgb(163, 18, 18);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: .4s;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.flexbtn:hover {
+    background-color: rgb(117, 10, 10);
+}
+
+.contentbetween {
+    justify-content: space-between;
+    display: flex;
+}
+
+.contentbetween p {
+    margin-bottom: -40px !important;
+    font-size: .8em;
+    margin-top: 0px;
+}

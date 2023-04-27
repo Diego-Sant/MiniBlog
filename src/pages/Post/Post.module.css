@@ -1,0 +1,58 @@
+.postcontainer {
+    max-width: 650px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex; /* adiciona display flex */
+    flex-direction: column; /* ajusta a direção dos elementos */
+    align-items: center; /* centraliza verticalmente os elementos */
+    padding: 80px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.1);
+    word-break: break-word;
+}
+
+.postcontainer img {
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .postcontainer img {
+        max-width: 600px;
+        height: auto;
+        width: 100%;
+    }
+  }
+
+.postcontainer h3 {
+    margin-bottom: .2em;
+}
+
+.postcontainer .linktag {
+    color: #0000EE;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+}
+
+.postcontainer .linktag:hover {
+    color: rgb(163, 18, 18);
+}
+
+.tags {
+    margin-top: 100px;
+}
+
+.tags .linktag {
+    margin-right: .5em;
+    font-size: .65em;
+}
+
+.linktag span {
+    font-weight: bold;
+}
+
+.tags span {
+    font-weight: bold;
+}
