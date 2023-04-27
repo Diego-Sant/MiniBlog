@@ -24,7 +24,7 @@ const Home = () => {
     <div className={styles.home}>
         <h1>Veja os nossos posts mais recentes</h1>
         <form onSubmit={handleSubmit} className={styles.search_form}>
-          <input type="text" placeholder="Ou busque por tags..." onChange={(e) => setQuery(e.target.value.toLowerCase())}/>
+          <input type="text" placeholder="Ou busque por tags..." onChange={(e) => setQuery(e.target.value.toLowerCase().replace(/ /g, ""))}/>
           <button className="btn btn-dark">Pesquisar</button>
         </form>
         <div>
